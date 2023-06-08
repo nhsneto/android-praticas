@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "478726000309",
+    "project_id": "praticafb-b4a49",
+    "storage_bucket": "praticafb-b4a49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478726000309:android:ac10a2496348400a31f8fc",
+        "android_client_info": {
+          "package_name": "pdm.nelson.praticafb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478726000309-t78cnol02046e9ii4sia1tdpmko0b4ek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2jw12192fqoEt5aKxFydd3jWLeW3OS44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478726000309-t78cnol02046e9ii4sia1tdpmko0b4ek.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

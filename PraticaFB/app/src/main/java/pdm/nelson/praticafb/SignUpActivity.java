@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -20,9 +21,13 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+
         this.edEmail = findViewById(R.id.edit_email);
         this.edPassword = findViewById(R.id.edit_password);
-        findViewById(R.id.register_button).setOnClickListener(view -> buttonSignUpClick(view));
+
+        Button registerButton = findViewById(R.id.register_button);
+        registerButton.setOnClickListener(view -> buttonSignUpClick(view));
+
         this.fbAuth = FirebaseAuth.getInstance();
         this.authListener = new FirebaseAuthListener(this);
     }
@@ -42,6 +47,7 @@ public class SignUpActivity extends AppCompatActivity {
     public void buttonSignUpClick(View view) {
         String email = edEmail.getText().toString();
         String password = edPassword.getText().toString();
+
         this.fbAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, task -> {
                     String msg = task.isSuccessful() ? "SIGN UP OK!" :

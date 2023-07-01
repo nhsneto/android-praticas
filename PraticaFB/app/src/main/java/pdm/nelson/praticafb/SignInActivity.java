@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -21,12 +22,16 @@ public class SignInActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
+
         edEmail = findViewById(R.id.edit_email);
         edPassword = findViewById(R.id.edit_password);
-        findViewById(R.id.signin_button).setOnClickListener(view -> buttonSignInClick(view));
-        findViewById(R.id.to_register_activity_button).setOnClickListener(view -> {
-            startActivity(new Intent(this, SignUpActivity.class));
-        });
+
+        Button signingButton = findViewById(R.id.signing_button);
+        signingButton.setOnClickListener(view -> buttonSignInClick(view));
+
+        Button registerButton = findViewById(R.id.to_register_activity_button);
+        registerButton.setOnClickListener(view -> startActivity(new Intent(this, SignUpActivity.class)));
+
         this.fbAuth = FirebaseAuth.getInstance();
         this.authListener = new FirebaseAuthListener(this);
     }
@@ -46,6 +51,7 @@ public class SignInActivity extends AppCompatActivity {
     public void buttonSignInClick(View view) {
         String login = edEmail.getText().toString();
         String passwd = edPassword.getText().toString();
+
         this.fbAuth.signInWithEmailAndPassword(login, passwd)
                 .addOnCompleteListener(this, task -> {
                     if (!task.isSuccessful()) {

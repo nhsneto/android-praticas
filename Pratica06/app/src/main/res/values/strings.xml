@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PraticaFB</string>
+    <string name="name">Nome</string>
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="signin_button_label">Entrar</string>
+    <string name="register_button_label">Cadastrar</string>
+    <string name="logout_button_label">Sair</string>
+    <string name="send_message_button_label">Enviar Mensagem</string>
+    <string name="edit_message_hint">Mensagem</string>
+</resources>

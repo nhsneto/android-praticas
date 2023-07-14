@@ -1,4 +1,4 @@
-package pdm.nelson.pratica07;
+package pdm.nelson.pratica08;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("pdm.nelson.pratica07", appContext.getPackageName());
+        assertEquals("pdm.nelson.pratica08", appContext.getPackageName());
     }
 }

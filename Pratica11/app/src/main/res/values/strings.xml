@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pratica11</string>
+    <string name="defaultMessageText">Prática: Alarmes, Notificações, Broadcast Receiver</string>
+    <string name="scheduleMessage">Agendar</string>
+</resources>

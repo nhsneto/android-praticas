@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pratica10</string>
+    <string name="edit_name_hint">Nome</string>
+    <string name="edit_grade_hint">Nota</string>
+    <string name="button_save_text">Inserir</string>
+    <string name="button_query_text">Consultar</string>
+    <string name="button_update_text">Atualizar</string>
+    <string name="button_delete_text">Apagar</string>
+</resources>
